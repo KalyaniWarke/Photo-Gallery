@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-J0-tQQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="GD9-IU-EKk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoU-iS-yqS">
+                                <rect key="frame" x="253" y="310" width="95" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aFS-G9-GFY"/>
+                                </constraints>
+                                <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iR-z3-6oE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVs-Al-QHF">
+                                <rect key="frame" x="285" y="450" width="30" height="40"/>
+                                <state key="normal" title="Mail"/>
+                                <connections>
+                                    <action selector="mailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAY-IK-Hg5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQL-Sa-eSN">
+                                <rect key="frame" x="284" y="520" width="32" height="40"/>
+                                <state key="normal" title="SMS"/>
+                                <connections>
+                                    <action selector="SMSAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEp-dd-cRq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1p-WM-TKy">
+                                <rect key="frame" x="235" y="380" width="130" height="40"/>
+                                <state key="normal" title="Open Photo Album"/>
+                                <connections>
+                                    <action selector="openAlbumAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjF-Hs-uc9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MXU-J0-tQQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1sX-Gy-mvx"/>
+                            <constraint firstItem="z1p-WM-TKy" firstAttribute="height" secondItem="OoU-iS-yqS" secondAttribute="height" id="Fpb-jd-nJv"/>
+                            <constraint firstItem="RQL-Sa-eSN" firstAttribute="height" secondItem="EVs-Al-QHF" secondAttribute="height" id="GSu-Fj-Eem"/>
+                            <constraint firstItem="EVs-Al-QHF" firstAttribute="centerX" secondItem="z1p-WM-TKy" secondAttribute="centerX" id="N6e-Vb-pJX"/>
+                            <constraint firstItem="MXU-J0-tQQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="QY2-G1-9Hr"/>
+                            <constraint firstItem="OoU-iS-yqS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WsY-4P-KEp"/>
+                            <constraint firstItem="RQL-Sa-eSN" firstAttribute="top" secondItem="EVs-Al-QHF" secondAttribute="bottom" constant="30" id="eT8-Hl-0j2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MXU-J0-tQQ" secondAttribute="trailing" constant="-20" id="gBt-Hh-zK4"/>
+                            <constraint firstItem="RQL-Sa-eSN" firstAttribute="centerX" secondItem="EVs-Al-QHF" secondAttribute="centerX" id="gh3-i7-U8n"/>
+                            <constraint firstItem="z1p-WM-TKy" firstAttribute="centerX" secondItem="OoU-iS-yqS" secondAttribute="centerX" id="kfl-Cu-9gn"/>
+                            <constraint firstItem="OoU-iS-yqS" firstAttribute="top" secondItem="MXU-J0-tQQ" secondAttribute="bottom" constant="40" id="nAc-u4-rTH"/>
+                            <constraint firstItem="EVs-Al-QHF" firstAttribute="top" secondItem="z1p-WM-TKy" secondAttribute="bottom" constant="30" id="ry9-Kj-RvI"/>
+                            <constraint firstItem="EVs-Al-QHF" firstAttribute="height" secondItem="z1p-WM-TKy" secondAttribute="height" id="vwx-7u-PpY"/>
+                            <constraint firstItem="z1p-WM-TKy" firstAttribute="top" secondItem="OoU-iS-yqS" secondAttribute="bottom" constant="30" id="yPJ-cR-0Gx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="MXU-J0-tQQ" id="Kmi-KN-jPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
